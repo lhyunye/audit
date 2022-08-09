@@ -1,0 +1,18 @@
+ CREATE TABLE IF NOT EXISTS `ods_api_keliu_data_modify_time_di`(
+ `siteKey`  string    ,
+ `siteName`  string    ,
+ `siteType`  string    ,
+ `inNum`  string    ,
+ `outNum`  string    ,
+ `throughNum`  string    ,
+ `dataTime`  string    ,
+ `modifyTime`  string    ,
+ `customerId` string
+ )
+ COMMENT '场所客流过店数据表'
+ PARTITIONED BY (
+    `pt` string)
+ ROW FORMAT SERDE  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+ STORED AS orc ;
+
+

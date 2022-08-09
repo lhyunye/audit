@@ -1,0 +1,16 @@
+ CREATE TABLE IF NOT EXISTS `ods_api_keliu_store_association_di`(
+ `source`  string    ,
+ `sourceName`  string    ,
+ `target`  string    ,
+ `targetName`  string    ,
+ `label`  string    ,
+ `date`  string,
+ `customerId` string
+ )
+ COMMENT '店铺关联度数据'
+ PARTITIONED BY (
+    `pt` string)
+ ROW FORMAT SERDE  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+ STORED AS orc ;
+
+

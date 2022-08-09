@@ -1,0 +1,3 @@
+# 数据源 数据表名称 hive数据表名称 稽核方式（all/指定日期） 增量字段 check字段字段 主键 全量和增量识别标志
+1 JZ CUST_XS_MX ods_city_jz_1_di_mcht_db_cust_xs_mx_converge 2021-05-20 RQSJ YYYH SEQNO,RQSJ,YYYH di
+1 JZ SYS_BIXSTZ ods_city_jz_1_di_mcht_db_sys_bixstz_converge 2021-04-01&2021-06-02 RQ CXINFO RQ,COM_CODE di

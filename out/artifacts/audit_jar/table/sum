@@ -1,0 +1,6 @@
+# 数据源 源表名称 hive表名称 时间范围 时间字段 求和字段 精度 增量全量标识
+1 JZ HD_INV_COM ods_city_jz_1_di_mcht_db_hd_inv_com_converge 2021-05-20&2021-05-25 RQSJ FQJS no di
+1 JZ HD_INV_COM ods_city_jz_1_di_mcht_db_hd_inv_com_converge all RQSJ FQJS no di
+
+
+

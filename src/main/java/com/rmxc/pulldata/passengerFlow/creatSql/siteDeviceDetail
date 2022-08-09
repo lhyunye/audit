@@ -1,0 +1,17 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_site_deveice_detail_dd`(
+`siteKey`      String,
+`siteName`      String,
+`hostName`      String,
+`deviceStatus`     String,
+`deviceChannelNum`    String,
+`useDeviceChannelNum`    String,
+`createTime`    String,
+`stateTime`     String,
+`siteRelation`     String,
+`customerId` string
+)
+COMMENT '场所设备数据表'
+PARTITIONED BY (
+   `pt` string)
+ROW FORMAT SERDE  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+STORED AS orc ;

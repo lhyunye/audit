@@ -1,0 +1,29 @@
+# 数据源 数据表名称 hive数据表名称 稽核方式（all/指定日期/alldd） 增量字段 全量和增量识别标志
+HYZT member_account ods_city_hyzt_1_dd_crm_member_account -&2021-07-15 last_time dd
+HYZT point_record ods_city_hyzt_1_dd_crm_point_record -&2021-07-15 create_time dd
+HYZT point_goods ods_city_hyzt_1_dd_crm_point_goods -&2021-07-15 create_time                  dd
+HYZT reward_record ods_city_hyzt_1_dd_crm_reward_record -&2021-07-15 create_time              dd
+HYZT coupon_record ods_city_hyzt_1_dd_crm_coupon_record -&2021-07-15 create_time              dd
+HYZT member_account_store ods_city_hyzt_1_dd_crm_member_account_store -&2021-07-15 last_time  dd
+HYZT member_info ods_city_hyzt_1_dd_crm_member_info -&2021-07-15 last_time                    dd
+HYZT OUTLET_SELLHEAD ods_al_erp_dd_mall_wfjbi_outlet_sellhead -&2021-07-15 SHDATE   dd
+HYZT OUTLET_SELLDETAIL ods_al_erp_dd_mall_wfjbi_outlet_selldetail -&2021-07-15 SPDATE  dd
+HYZT OUTLET_SALEGOODSLIST ods_al_erp_dd_mall_wfjbi_outlet_salegoodslist -&2021-07-15 SGLDATE   dd
+HYZT OUTLET_SALEPAYNAMENT SPDATE -&2021-07-15 last_time dd
+HYZT OUTLET_CUSTCONSLOG ods_al_erp_dd_mall_wfjbi_outlet_custconslog -&2021-07-15 CDLDATE   dd
+HYZT OUTLET_SALECOUPONGAIN ods_al_erp_dd_mall_wfjbi_outlet_salecoupongain -&2021-07-15 EFF_DATE  dd
+
+HYZT dbo.BI_INVPAY ods_spring_gy_1_dd_gm_biodps_dbo_bi_invpay   -&2021-07-15 RQSJ dd
+HYZT dbo.BI_INVMAIN ods_spring_gy_1_dd_gm_biodps_dbo_bi_invmain  -&2021-07-15 RQSJ dd
+HYZT dbo.BI_INVCOM ods_spring_gy_1_dd_gm_biodps_dbo_bi_invcom   -&2021-07-15 RQSJ dd
+HYZT dbo.BI_COMMOD ods_spring_gy_1_dd_gm_biodps_dbo_bi_commod   -&2021-07-15 GXSJ dd
+HYZT dbo.BI_KLJK ods_spring_gy_1_dd_gm_biodps_dbo_BI_KLJK         -&2021-07-15 RQSJ dd
+HYZT dbo.BI_ICCARDMX ods_spring_gy_1_dd_gm_biodps_dbo_BI_ICCARDMX -&2021-07-15 RQSJ dd
+HYZT dbo.BI_CUSTOM ods_spring_gy_1_dd_gm_biodps_dbo_BI_CUSTOM   -&2021-07-15 GXSJ dd
+
+HYZT CONTRACT ods_gwzx_jq_dd_wfjzb_bi_contract   -&2021-07-15 GXSJ dd
+HYZT XS_TB ods_gwzx_jq_dd_wfjzb_bi_xs_tb          -&2021-07-15 GXSJ dd
+HYZT WG_YW_RPT ods_gwzx_jq_dd_wfjzb_bi_wg_yw_rpt  -&2021-07-15 GXSJ dd
+HYZT WG_CW_RPT ods_gwzx_jq_dd_wfjzb_bi_wg_cw_rpt  -&2021-07-15 GXSJ dd
+HYZT T_XSLS ods_gwzx_jq_dd_wfjzb_bi_t_xsls         -&2021-07-15 GXSJ dd
+HYZT T_XSSP ods_gwzx_jq_dd_wfjzb_bi_t_xssp         -&2021-07-15 GXSJ dd

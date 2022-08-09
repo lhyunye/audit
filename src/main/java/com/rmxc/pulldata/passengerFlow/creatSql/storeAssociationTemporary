@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_store_association_di_temporary`(
+ `source`  string    ,
+ `sourceName`  string    ,
+ `target`  string    ,
+ `targetName`  string    ,
+ `label`  string    ,
+ `date`  string,
+ `customerId` string
+)
+COMMENT '店铺关联度数据表-临时'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE ;

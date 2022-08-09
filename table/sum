@@ -1,0 +1,33 @@
+# 数据源 源表名称 hive表名称 时间范围 时间字段 求和字段 精度 增量全量标识
+HYZT member_account ods_city_hyzt_1_dd_crm_member_account -&2021-07-15 last_time sid/member_id/status/grade/channel 12             dd
+HYZT point_record ods_city_hyzt_1_dd_crm_point_record  -&2021-07-15 create_time sid/member_id/grade/first_type/second_type/point_type/amount/point/point_base/point_prom/growth/channel/share_flag/get_channel/verify_type 12 dd
+HYZT point_goods ods_city_hyzt_1_dd_crm_point_goods -&2021-07-15 create_time   sid/record_sid/member_id/amount/point/point_base/point_prom/growth 12               dd
+HYZT reward_record ods_city_hyzt_1_dd_crm_reward_record -&2021-07-15 create_time     type/amount/goods_count/channel/cancel_record_sid 12         dd
+HYZT coupon_record ods_city_hyzt_1_dd_crm_coupon_record -&2021-07-15 create_time        sid/record_sid/project_sid/first_type/second_type/channel/share_flag/get_channel 12      dd
+HYZT member_account_store ods_city_hyzt_1_dd_crm_member_account_store -&2021-07-15 last_time sid/member_id/cid/status/grade 12 dd
+HYZT member_info ods_city_hyzt_1_dd_crm_member_info -&2021-07-15 last_time     sid/member_id/sex/id_type/work/educ/marry/ethnic/birthpet/zodiac/qq/badman 12               dd
+HYZT OUTLET_SELLHEAD ods_al_erp_dd_mall_wfjbi_outlet_sellhead -&2021-07-15 SHDATE shbillno/shinvno/shoughtpay/shfactpay/shpopzk/shcustzk/shgrantzk/shsysy/shybillno/shyfphm 12 dd
+HYZT OUTLET_SELLDETAIL ods_al_erp_dd_mall_wfjbi_outlet_selldetail -&2021-07-15 SPDATE sdbillno/sdrowno/sdsl/sdsj/sdsjje/sdcjje 12 dd
+HYZT OUTLET_SALEGOODSLIST ods_al_erp_dd_mall_wfjbi_outlet_salegoodslist -&2021-07-15 SGLDATE sglxstax/sglkl/sglsl/sgltotzk/sglsupzk/sglcash/sglcheck/sglccard/sglfcard/sglgcert/sglgzje/sglopay/sglxssr/sglbhsxssr/sgljjml/sglbhsjjml/sglcbje/sglbhscbje/sglcbjeadj/sglbhscbjeadj/sglcustsr 12 dd
+HYZT OUTLET_SALEPAYNAMENT SPDATE
+HYZT OUTLET_CUSTCONSLOG ods_al_erp_dd_mall_wfjbi_outlet_custconslog -&2021-07-15 CDLDATE cdlrowno/ent_id/cdlinvno/cdlbzhl/cdlorirow/cdlsl/cdlsj/cdlprice/cdlzkje/cdlcjje/cdljf/cdlyxje 12 dd
+HYZT OUTLET_SALECOUPONGAIN ods_al_erp_dd_mall_wfjbi_outlet_salecoupongain -&2021-07-15 EFF_DATE seqno/billno/face_value/amount 12 dd
+
+HYZT dbo.BI_INVPAY ods_spring_gy_1_dd_gm_biodps_dbo_bi_invpay   -&2021-07-15 RQSJ  payje 12 dd
+HYZT dbo.BI_INVMAIN ods_spring_gy_1_dd_gm_biodps_dbo_bi_invmain  -&2021-07-15 RQSJ zzke/vipzke/yhzke/sccdzke/ysje/sjje 12 dd
+HYZT dbo.BI_INVCOM ods_spring_gy_1_dd_gm_biodps_dbo_bi_invcom   -&2021-07-15 RQSJ  sl/lsj/zke/xxtax 12 dd
+HYZT dbo.BI_COMMOD ods_spring_gy_1_dd_gm_biodps_dbo_bi_commod   -&2021-07-15 GXSJ  spkl/jxsl/xxtax/xftax/bhsjj/hsjj/lsj 12 dd
+#HYZT dbo.BI_KLJK ods_spring_gy_1_dd_gm_biodps_dbo_BI_KLJK         -&2021-07-15 RQSJ
+HYZT dbo.BI_ICCARDMX ods_spring_gy_1_dd_gm_biodps_dbo_BI_ICCARDMX -&2021-07-15 RQSJ amount dd
+#HYZT dbo.BI_CUSTOM ods_spring_gy_1_dd_gm_biodps_dbo_BI_CUSTOM   -&2021-07-15 GXSJ
+
+HYZT CONTRACT ods_gwzx_jq_dd_wfjzb_bi_contract   -&2021-07-15 GXSJ  mj 12 dd
+HYZT XS_TB ods_gwzx_jq_dd_wfjzb_bi_xs_tb          -&2021-07-15 GXSJ xsje/xsbs 12 dd
+HYZT WG_YW_RPT ods_gwzx_jq_dd_wfjzb_bi_wg_yw_rpt  -&2021-07-15 GXSJ area/period/sale 12 dd
+HYZT WG_CW_RPT ods_gwzx_jq_dd_wfjzb_bi_wg_cw_rpt  -&2021-07-15 GXSJ area/fee_year_plan/period/rental_fee/rental_fee_plan/rental_diff 12 dd
+HYZT T_XSLS ods_gwzx_jq_dd_wfjzb_bi_t_xsls         -&2021-07-15 GXSJ  zje/zkje/zdzkje/hdzkje/hyzkje/zyzkje/zfje 12 dd
+HYZT T_XSSP ods_gwzx_jq_dd_wfjzb_bi_t_xssp         -&2021-07-15 GXSJ spno/sl/dj/yfje/zkje/zfje/csxs/hscb/cscb/yccb 12 dd
+
+
+
+

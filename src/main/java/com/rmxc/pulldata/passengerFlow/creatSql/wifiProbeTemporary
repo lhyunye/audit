@@ -1,0 +1,18 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_wifi_probe_di_temporary`(
+`siteName`  string,
+ `siteKey`  string,
+ `siteType`  string,
+ `customerNum`  string,
+ `oldCustomer`  string,
+ `returnStoreRates`  string,
+ `firstArrNum`  string,
+ `inCount`  string,
+ `passNum`  string,
+ `avgWanderTime`  string,
+ `dataTime`  string,
+ `modifyTime`  string,
+ `customerId` string
+)
+COMMENT '场所探针数据表-临时'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE ;

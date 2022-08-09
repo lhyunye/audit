@@ -1,0 +1,11 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_site_entry_dd`(
+`siteKey`  string    ,
+`siteName`  string    ,
+`type`  string,
+`customerId` string
+)
+COMMENT '客流场所key值表'
+PARTITIONED BY (
+   `pt` string)
+ROW FORMAT SERDE  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+STORED AS orc ;

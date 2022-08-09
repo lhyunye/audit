@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_site_entry_dd_temporary`(
+`siteKey`  string    ,
+`siteName`  string    ,
+`type`  string        ,
+`customerId` string
+)
+COMMENT '客流场所key值表-临时'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE ;

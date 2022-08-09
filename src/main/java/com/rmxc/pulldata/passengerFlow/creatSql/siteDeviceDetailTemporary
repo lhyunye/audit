@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_site_deveice_detail_dd_temporary`(
+`siteKey`      String,
+`siteName`      String,
+`hostName`      String,
+`deviceStatus`     String,
+`deviceChannelNum`    String,
+`useDeviceChannelNum`    String,
+`createTime`    String,
+`stateTime`     String,
+`siteRelation`     String,
+`customerId` string
+)
+COMMENT '场所设备数据表-临时'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE ;

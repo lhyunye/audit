@@ -1,0 +1,31 @@
+CREATE TABLE IF NOT EXISTS `ods_api_keliu_mobile_phone_brand_di_temporary`(
+ `siteName`         String ,
+ `dataTime`         String ,
+ `siteKey`         String ,
+ `modifyTime`         String ,
+ `sony`         String ,
+ `nokia`         String ,
+ `motorola`         String ,
+ `xiaomi`         String ,
+ `zte`         String ,
+ `lenovo`         String ,
+ `htc`         String ,
+ `iphone`         String ,
+ `samsung`         String ,
+ `huawei`         String ,
+ `microsoft`         String ,
+ `unknown`         String ,
+ `others`         String ,
+ `meizu`         String ,
+ `oppo`         String ,
+ `coolpad`        String ,
+ `vivo`         String ,
+ `hisense`         String ,
+ `leshi`         String ,
+ `tcl`         String ,
+ `gionee`         String ,
+ `customerId` string
+)
+COMMENT '手机终端品牌数据表-临时'
+ROW FORMAT DELIMITED FIELDS TERMINATED BY '\t'
+STORED AS TEXTFILE ;

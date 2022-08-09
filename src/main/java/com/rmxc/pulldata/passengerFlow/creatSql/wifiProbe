@@ -1,0 +1,22 @@
+ CREATE TABLE IF NOT EXISTS `ods_api_keliu_wifi_probe_di`(
+ `siteName`  string,
+ `siteKey`  string,
+ `siteType`  string,
+ `customerNum`  string,
+ `oldCustomer`  string,
+ `returnStoreRates`  string,
+ `firstArrNum`  string,
+ `inCount`  string,
+ `passNum`  string,
+ `avgWanderTime`  string,
+ `dataTime`  string,
+ `modifyTime`  string,
+ `customerId` string
+ )
+ COMMENT '场所探针数据表'
+ PARTITIONED BY (
+    `pt` string)
+ ROW FORMAT SERDE  'org.apache.hadoop.hive.ql.io.orc.OrcSerde'
+ STORED AS orc ;
+
+
