@@ -1,7 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.rmxc.audit.AuditApplicationTests
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.29 s <<< FAILURE! - in com.rmxc.audit.AuditApplicationTests
-com.rmxc.audit.AuditApplicationTests  Time elapsed: 0.289 s  <<< ERROR!
-java.lang.IllegalStateException: Unable to find a @SpringBootConfiguration, you need to use @ContextConfiguration or @SpringBootTest(classes=...) with your test
-

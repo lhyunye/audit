@@ -39,6 +39,7 @@ public class CheckCount {
         String sql = "";
         try {
             sql = String.format(SqlModel.queryCountByCase, table,suffix);
+            System.out.println(sql);
             JdbcResult jdbcResult = DataBaseConn.queryMsg(dataSourceName, sql);
             ResultSet resultSet = jdbcResult.getRs();
             if (!ObjectUtils.isEmpty(resultSet)&&resultSet.next()){

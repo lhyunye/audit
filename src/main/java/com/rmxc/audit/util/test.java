@@ -35,15 +35,25 @@ import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Date;
-import java.util.List;
+import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 public class test {
+
+
+//    public static void main(String[] args) {
+//        String a = "2022-08-06&2022-08-26";
+//         String[] split = a.split("&");
+//        Arrays.stream(split).map(x -> {System.out.println(x.substring(0, 7));return "";});
+//         Set<String> pcollect = Arrays.stream(split).map(x -> x.substring(0, 7)).collect(Collectors.toSet());
+//
+//        String ptend = pcollect.stream().collect(Collectors.joining("\' or copt = \'"));
+//        System.out.println(" and copt = \'"+ptend+"\'");;
+//    }
+
+
 
     public static void getTradesSold(Token token) throws ParseException, SDKException {
         //初始化有赞客户端
@@ -193,38 +203,38 @@ public class test {
     }
 
 
-    public static void main(String[] args) throws SQLException, MessagingException, SDKException, ParseException {
-
-
-
-        String a = "14013139464160543,3226067691815744,543807342650656,19215281648.43,12561418477.38,13381309493.55,9846650.30,18503500346.75";
-
-        String[] split = a.split(",");
-        List<BigDecimal> values = new ArrayList<>();
-        for(String value:split){
-            BigDecimal bigDecimal = new BigDecimal(value);
-            values.add(bigDecimal);
-
-        }
-        BigDecimal bigss=BigDecimal.ZERO;
-        for(BigDecimal b :values){
-            bigss=bigss.add(b);
-        }
-        String sum = bigss.setScale(Integer.parseInt("2"),BigDecimal.ROUND_UP).toString();
-
-        System.out.println(sum);
-
-
-//        Token token = new Token("542dc937584358012747912aff01829");
-
-        //getTradesSold(token);
-        //getTrade(token);
-        //getOrderPromotion(token);
-//        getOrderBatch(token);
-//       getStandardData(token);
-//        System.out.println(new Date().getTime());
-//       // getStandardData2(token);
-       // getFollowersInfo(token);
-
-    }
+//    public static void main(String[] args) throws SQLException, MessagingException, SDKException, ParseException {
+//
+//
+//
+//        String a = "14013139464160543,3226067691815744,543807342650656,19215281648.43,12561418477.38,13381309493.55,9846650.30,18503500346.75";
+//
+//        String[] split = a.split(",");
+//        List<BigDecimal> values = new ArrayList<>();
+//        for(String value:split){
+//            BigDecimal bigDecimal = new BigDecimal(value);
+//            values.add(bigDecimal);
+//
+//        }
+//        BigDecimal bigss=BigDecimal.ZERO;
+//        for(BigDecimal b :values){
+//            bigss=bigss.add(b);
+//        }
+//        String sum = bigss.setScale(Integer.parseInt("2"),BigDecimal.ROUND_UP).toString();
+//
+//        System.out.println(sum);
+//
+//
+////        Token token = new Token("542dc937584358012747912aff01829");
+//
+//        //getTradesSold(token);
+//        //getTrade(token);
+//        //getOrderPromotion(token);
+////        getOrderBatch(token);
+////       getStandardData(token);
+////        System.out.println(new Date().getTime());
+////       // getStandardData2(token);
+//       // getFollowersInfo(token);
+//
+//    }
 }

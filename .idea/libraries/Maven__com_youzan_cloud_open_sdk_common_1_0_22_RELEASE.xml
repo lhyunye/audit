@@ -1,13 +1,13 @@
 <component name="libraryTable">
   <library name="Maven: com.youzan.cloud:open-sdk-common:1.0.22-RELEASE">
     <CLASSES>
-      <root url="jar://D:/Program Files/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE.jar!/" />
+      <root url="jar://D:/应用/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE.jar!/" />
     </CLASSES>
     <JAVADOC>
-      <root url="jar://D:/Program Files/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE-javadoc.jar!/" />
+      <root url="jar://D:/应用/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE-javadoc.jar!/" />
     </JAVADOC>
     <SOURCES>
-      <root url="jar://D:/Program Files/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE-sources.jar!/" />
+      <root url="jar://D:/应用/repository_maven/com/youzan/cloud/open-sdk-common/1.0.22-RELEASE/open-sdk-common-1.0.22-RELEASE-sources.jar!/" />
     </SOURCES>
   </library>
 </component>
