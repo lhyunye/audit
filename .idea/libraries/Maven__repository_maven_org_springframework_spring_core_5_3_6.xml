@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: repository_maven.org.springframework:spring-core:5.3.6">
+    <CLASSES>
+      <root url="jar://D:/应用/repository_maven/repository_maven/org/springframework/spring-core/5.3.6/spring-core-5.3.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/应用/repository_maven/repository_maven/org/springframework/spring-core/5.3.6/spring-core-5.3.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/应用/repository_maven/repository_maven/org/springframework/spring-core/5.3.6/spring-core-5.3.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

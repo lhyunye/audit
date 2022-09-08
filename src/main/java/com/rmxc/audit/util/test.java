@@ -192,39 +192,39 @@ public class test {
 
     }
 
-
-    public static void main(String[] args) throws SQLException, MessagingException, SDKException, ParseException {
-
-
-
-        String a = "14013139464160543,3226067691815744,543807342650656,19215281648.43,12561418477.38,13381309493.55,9846650.30,18503500346.75";
-
-        String[] split = a.split(",");
-        List<BigDecimal> values = new ArrayList<>();
-        for(String value:split){
-            BigDecimal bigDecimal = new BigDecimal(value);
-            values.add(bigDecimal);
-
-        }
-        BigDecimal bigss=BigDecimal.ZERO;
-        for(BigDecimal b :values){
-            bigss=bigss.add(b);
-        }
-        String sum = bigss.setScale(Integer.parseInt("2"),BigDecimal.ROUND_UP).toString();
-
-        System.out.println(sum);
-
-
-//        Token token = new Token("542dc937584358012747912aff01829");
-
-        //getTradesSold(token);
-        //getTrade(token);
-        //getOrderPromotion(token);
-//        getOrderBatch(token);
-//       getStandardData(token);
-//        System.out.println(new Date().getTime());
-//       // getStandardData2(token);
-       // getFollowersInfo(token);
-
-    }
+//
+//    public static void main(String[] args) throws SQLException, MessagingException, SDKException, ParseException {
+//
+//
+//
+//        String a = "14013139464160543,3226067691815744,543807342650656,19215281648.43,12561418477.38,13381309493.55,9846650.30,18503500346.75";
+//
+//        String[] split = a.split(",");
+//        List<BigDecimal> values = new ArrayList<>();
+//        for(String value:split){
+//            BigDecimal bigDecimal = new BigDecimal(value);
+//            values.add(bigDecimal);
+//
+//        }
+//        BigDecimal bigss=BigDecimal.ZERO;
+//        for(BigDecimal b :values){
+//            bigss=bigss.add(b);
+//        }
+//        String sum = bigss.setScale(Integer.parseInt("2"),BigDecimal.ROUND_UP).toString();
+//
+//        System.out.println(sum);
+//
+//
+////        Token token = new Token("542dc937584358012747912aff01829");
+//
+//        //getTradesSold(token);
+//        //getTrade(token);
+//        //getOrderPromotion(token);
+////        getOrderBatch(token);
+////       getStandardData(token);
+////        System.out.println(new Date().getTime());
+////       // getStandardData2(token);
+//       // getFollowersInfo(token);
+//
+//    }
 }

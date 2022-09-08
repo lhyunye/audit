@@ -5,7 +5,6 @@ import com.rmxc.audit.plugin.CheckCount;
 import com.rmxc.audit.plugin.CheckMd5Forkey;
 import com.rmxc.audit.util.*;
 import com.rmxc.audit.vo.CheckResult;
-import com.sun.org.apache.regexp.internal.RE;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
 import redis.clients.jedis.Jedis;

@@ -18,14 +18,14 @@ public class schedule {
     private static final String defaultEnvironment = "dev";
 
 
-    public static void main(String[] args) {
-
-//        DataFormat dataFormat = new DataFormat();   di 增长
-//        dataFormat.exec(args[0]);
-        Convert convert =new Convert();
-        convert.exec(directoryPath,"ods_city_sa_1_mcht_db_","prod");
-
-    }
+//    public static void main(String[] args) {
+//
+////        DataFormat dataFormat = new DataFormat();   di 增长
+////        dataFormat.exec(args[0]);
+//        Convert convert =new Convert();
+//        convert.exec(directoryPath,"ods_city_sa_1_mcht_db_","prod");
+//
+//    }
 
 //    /**
 //     * 根据外部参数执行脚本
