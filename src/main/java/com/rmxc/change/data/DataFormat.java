@@ -115,7 +115,7 @@ public class DataFormat {
             bw.close();
         } catch (Exception e) {
             e.printStackTrace();
-            log.error("数据转化失败：异常为：", e.getMessage());
+            System.out.println("数据转化失败：异常为："+ e.getMessage());
         }
 
     }
