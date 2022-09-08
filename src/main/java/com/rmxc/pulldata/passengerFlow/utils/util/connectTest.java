@@ -11,23 +11,23 @@ public class connectTest {
 //    private static String apiPath = "/huikeapi/passengerFlowData/V3/getSiteDeviceDetailsTotal";
 //
 
-//    public static void main(String[] args) throws Exception {
-//        //port01();
-//
-//       port02();
-//
-//       // port03();
-//      //  port04();
-//      //  port05();
-//
-//
-//
-////        GetSiteDeviceDetailsTotal getSiteDeviceDetailsTotal = new GetSiteDeviceDetailsTotal();
-////        String a = getSiteDeviceDetailsTotal.exec("B806EFE1CA0A6368D61EB675E7326C614", "300");
-////        System.out.println(a);
-//
-//
-//    }
+    public static void main(String[] args) throws Exception {
+        //port01();
+
+       port02();
+
+       // port03();
+      //  port04();
+      //  port05();
+
+
+
+//        GetSiteDeviceDetailsTotal getSiteDeviceDetailsTotal = new GetSiteDeviceDetailsTotal();
+//        String a = getSiteDeviceDetailsTotal.exec("B806EFE1CA0A6368D61EB675E7326C614", "300");
+//        System.out.println(a);
+
+
+    }
 
 
 

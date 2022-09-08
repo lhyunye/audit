@@ -4,14 +4,12 @@ import com.rmxc.audit.Factory.AuditFactory;
 import com.rmxc.audit.Factory.AuditService;
 import com.rmxc.audit.util.*;
 import com.rmxc.change.data.DataFormat;
-import com.rmxc.change.data.NewDataFormat;
 import com.rmxc.change.data.WordFormat;
 import com.rmxc.change.structure.Converge;
 import com.rmxc.change.structure.Convert;
 import com.rmxc.checkStatus.Check;
 import com.rmxc.pulldata.passengerFlow.PFexec;
 import com.rmxc.pulldata.passengerFlow.apiList.GetSiteKeysByCustomerId;
-import jline.internal.Log;
 import jodd.util.ObjectUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.logging.log4j.util.Strings;
@@ -51,8 +49,7 @@ public class Dispense {
 
         //数据格式转换   数据文件路径
         //changeData(args[0]);
-
-//        changeData("./bcpfile/");
+       // changeData("./bcpfile/");
 
         //建表语句转换 sybase ->> hive        建表语句存储位置,   hive表前缀  . 环境
         //changeSql(args[0],args[1],args[2]);
@@ -100,8 +97,7 @@ public class Dispense {
             if (!ObjectUtils.isEmpty(audit)) {
                 audit.exec();
             } else {
-
-                Log.error("未找到策略：" + stype);
+                log.error("未找到策略：" + stype);
             }
         }
         LocalDateTime stop = LocalDateTime.now();
@@ -117,11 +113,8 @@ public class Dispense {
      * @author :lihao
      * */
     public static void changeData(String path){
-//        DataFormat dataFormat = new DataFormat();
-//        dataFormat.exec(path);
-
-        NewDataFormat newDataFormat = new NewDataFormat();
-        newDataFormat.exec(path);
+        DataFormat dataFormat = new DataFormat();
+        dataFormat.exec(path);
     }
 
 

@@ -43,12 +43,12 @@ public class JedisUtil {
         return jedisCluster;
     }
 
-//    public static void main(String[] args) throws InterruptedException {
-//        JedisCluster redisCluster = getRedisCluster();
-//        redisCluster.set("1","1");
-//        System.out.println(redisCluster.get("1"));
-//        Thread.sleep(3000);
-//        redisCluster.close();
-//
-//    }
+    public static void main(String[] args) throws InterruptedException {
+        JedisCluster redisCluster = getRedisCluster();
+        redisCluster.set("1","1");
+        System.out.println(redisCluster.get("1"));
+        Thread.sleep(3000);
+        redisCluster.close();
+
+    }
 }

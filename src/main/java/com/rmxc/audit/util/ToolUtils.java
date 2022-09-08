@@ -17,7 +17,6 @@ import java.util.*;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 @Slf4j
@@ -25,12 +24,9 @@ public class ToolUtils {
     private static final DateTimeFormatter df = DateTimeFormatter.ofPattern("yyyy-MM-dd");
     private static final DateTimeFormatter df1 = DateTimeFormatter.ofPattern("yyyyMMdd");
     private static final DateTimeFormatter df2 = DateTimeFormatter.ofPattern("yyyy-MM-dd 00:00:00");
-    private static final DateTimeFormatter df3 = DateTimeFormatter.ofPattern("yyyy-MM");
 
     //触发器汇聚表。最新数据和历史删除数据都存在，需过滤掉删除数据
     private static String[] triList={"db_inv_main_converge","db_inv_com_converge","db_inv_pay2_converge","db_jxc_xl_day_converge","db_jxc_com_curm_day_converge","db_jxc_gz_curm_day_converge","db_str_com_day_converge","db_commod_converge","db_rpt_zb_inv_xstj_converge","md_inv_main_converge","md_inv_com_converge","md_inv_pay2_converge","md_jxc_xl_day_converge","md_jxc_com_curm_day_converge","md_jxc_gz_curm_day_converge","md_str_com_day_converge","md_commod_converge","md_rpt_zb_inv_xstj_converge"};
-    //汇聚表分区字段
-    private static String[] partitionList={"ds","pt","copt","DS","PT","COPT"};
 
 
     /**
@@ -235,19 +231,7 @@ public class ToolUtils {
         String suffix = "";
         suffix =dealSuffix(type,incr,"hive");
         if("di".equals(status.trim())){
-            //末尾加_M标志的数据表copt标志为yyyy-mm
-            if (tableName.contains("_converge_m")){
-                List<String> useStatus = Arrays.stream(triList).filter(x -> tableName.contains(x)).collect(Collectors.toList());
-                if(useStatus.size()>0){
-                    suffix = suffix +" and (operation_type = 1 or operation_type = 'A') ";
-                }
-                 String[] times = type.split("&");
-                 Set<String> pcollect = Arrays.stream(times).map(x -> x.substring(0, 7)).collect(Collectors.toSet());
-                String ptend = pcollect.stream().collect(Collectors.joining("\' or copt = \'"));
-                System.out.println(" and copt = \'"+ptend+"\'");;
-                suffix = suffix + " and copt = \'"+ptend+"\'";
-
-            }else if(tableName.contains("_converge")){
+            if (tableName.contains("_converge")){
                 List<String> useStatus = Arrays.stream(triList).filter(x -> tableName.contains(x)).collect(Collectors.toList());
                 if(useStatus.size()>0){
                     suffix = suffix +" and (operation_type = 1 or operation_type = 'A') ";
@@ -272,11 +256,7 @@ public class ToolUtils {
         if (incr.contains("/")){
             if("hive".equals(status)){
                 incr = incr.split("/")[1];
-                String finalIncr = incr;
-                //根据字段判断是否为分区字段
-                if (Arrays.stream(partitionList).filter(x -> finalIncr.equals(x)).collect(Collectors.toList()).size()>0){
-                    dateTimeFormatter = df1;
-                }
+                dateTimeFormatter = df1;
             }else {
                 incr = incr.split("/")[0];
             }

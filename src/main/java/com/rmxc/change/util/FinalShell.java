@@ -7,12 +7,12 @@ import java.util.Scanner;
 
 
 public class FinalShell {
-//    public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
-//        System.out.print("请输入FinalShell的离线机器码：");
-//        Scanner reader = new Scanner(System.in);
-//        String machineCode = reader.nextLine();
-//        generateKey(machineCode);
-//    }
+    public static void main(String[] args) throws NoSuchAlgorithmException, IOException {
+        System.out.print("请输入FinalShell的离线机器码：");
+        Scanner reader = new Scanner(System.in);
+        String machineCode = reader.nextLine();
+        generateKey(machineCode);
+    }
 
     public static void generateKey(String hardwareId) throws NoSuchAlgorithmException {
         String proKey = transform(61305 + hardwareId + 8552);
